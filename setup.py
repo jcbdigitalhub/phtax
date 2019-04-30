@@ -15,9 +15,9 @@ requirements = parse_requirements("requirements.txt", session="")
 setup(
 	name='phtax',
 	version=version,
-	description='Philippine Tax Reports',
-	author='Opensource Solutions Philippines',
-	author_email='info@ossph.com',
+	description='Philippine Tax Module',
+	author='JCB Digital Accounting',
+	author_email='ask@jcbangquilcpa.com',
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,
