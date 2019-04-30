@@ -10,7 +10,7 @@ with open('phtax/__init__.py', 'rb') as f:
     version = str(ast.literal_eval(_version_re.search(
         f.read().decode('utf-8')).group(1)))
 
-requirements = from pip.req import parse_requirements
+requirements = parse_requirements("requirements.txt", session="")
 
 setup(
 	name='phtax',
