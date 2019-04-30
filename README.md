@@ -1,6 +1,6 @@
-## Philippine Tax Reports
+## Philippine Tax Module
 
-Philippine Tax Reports
+Philippine Tax Module
 
 #### License
 
