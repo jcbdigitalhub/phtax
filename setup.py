@@ -10,7 +10,10 @@ with open('phtax/__init__.py', 'rb') as f:
     version = str(ast.literal_eval(_version_re.search(
         f.read().decode('utf-8')).group(1)))
 
-requirements = parse_requirements("requirements.txt", session="")
+try: # for pip >= 10
+    requirements = from pip._internal.req import parse_requirements
+except ImportError: # for pip <= 9.0.3
+    requirements = from pip.req import parse_requirements
 
 setup(
 	name='phtax',
